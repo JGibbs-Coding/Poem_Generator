@@ -4,33 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input type="text" placeholder="Enter topic of the poem"/ required
-        autocomplete="off">
-        <input type="submit" />
-      </form>
-      <div>Generated poem goes in here</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/JGibbs-Coding" target="_blank"
-        >Jennifer Gibbs</a
-      >, is
-      <a href="https://github.com/JGibbs-Coding/Poem_Generator" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://poemgeneratorjg.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>The Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input type="text" placeholder="Enter topic of the poem"/ required
+          autocomplete="off" class="prompt">
+          <input type="submit" class="submitButton" />
+        </form>
+        <div class="poem">Generated poem goes in here</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/JGibbs-Coding" target="_blank"
+          >Jennifer Gibbs</a
+        >, is
+        <a
+          href="https://github.com/JGibbs-Coding/Poem_Generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://poemgeneratorjg.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>
