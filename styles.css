@@ -63,6 +63,10 @@ form {
   color: navy;
 }
 
+.poem strong {
+  color: lightpink;
+}
+
 footer {
   text-align: center;
   font-size: 10px;
