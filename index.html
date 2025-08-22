@@ -14,12 +14,23 @@
         <h1>Ye Olde Poem Generator</h1>
       </header>
       <main>
-        <form id="poemGeneratorForm">
-          <input type="text" placeholder="Enter topic of the poem"/ required
-          autocomplete="off" class="prompt" id="promptInstructions">
-          <input type="submit" class="submitButton" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="formContainer">
+          <form id="poemGeneratorForm">
+            <input
+              type="text"
+              placeholder="Name thy topic and I will conjure a poem"
+              required
+              autocomplete="off"
+              class="prompt"
+              id="promptInstructions"
+            />
+            <input type="submit" class="submitButton" />
+          </form>
+          <small class="hint"
+            ><em>Eg: Rain, Romance, Happiness, Birthday </em></small
+          >
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         This project was coded by
