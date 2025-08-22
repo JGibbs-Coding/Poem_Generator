@@ -2,7 +2,6 @@ function displayPoem(response) {
   console.log("poem generated");
 
   new Typewriter("#poem", {
-    //replace holding text with response path
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
@@ -13,18 +12,6 @@ function displayPoem(response) {
 function generatePoem(event) {
   event.preventDefault();
 
-  //let poemFormElement = document.querySelector("#poemGeneratorForm");
-  //poemFormElement.addEventListener("submit", generatePoem);
-
-  //this has been relocated to the displayPoem function
-  //new Typewriter("#poem", {
-  //strings: ["Generated poem goes in here"],
-  //autoStart: true,
-  //delay: 1,
-  //cursor: "",
-  // });
-
-  //build the API URL
   let promptInput = document.querySelector("#promptInstructions");
 
   let apiKey = "7fftc541dbabc3018759foaa254e09a2";
@@ -41,9 +28,7 @@ function generatePoem(event) {
   console.log(`Prompt:${prompt}`);
   console.log(`Context:${context}`);
 
-  //make a call to the API using Axios
   axios.get(apiURL).then(displayPoem);
-  //display the AI generated poem
 }
 
 let poemFormElement = document.querySelector("#poemGeneratorForm");
